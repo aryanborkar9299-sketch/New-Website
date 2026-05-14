@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Heaven | Premium Dining</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header id="navbar">
+        <nav class="container">
+            <div class="logo">Spice<span>Heaven</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content container">
+            <h1>Delicious Food <br>Delivered <span>Fresh</span></h1>
+            <p>Experience premium taste crafted by expert chefs with the finest organic ingredients.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn btn-primary">Order Now</a>
+                <a href="#contact" class="btn btn-secondary">Book Table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section">
+        <div class="container about-wrapper">
+            <div class="about-img">
+                <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Our Kitchen">
+            </div>
+            <div class="about-text">
+                <h2 class="section-title" style="text-align: left;">Our <span>Story</span></h2>
+                <p>Founded in 2026, <strong>Spice Heaven</strong> started with a simple mission: to bring authentic flavors to your table. Our chefs use traditional recipes infused with modern culinary techniques.</p>
+                <ul class="about-features">
+                    <li><i class="fas fa-check-circle"></i> 100% Fresh Ingredients</li>
+                    <li><i class="fas fa-check-circle"></i> Experienced Master Chefs</li>
+                    <li><i class="fas fa-check-circle"></i> Hygienic & Clean Kitchen</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes Section -->
+    <section id="menu" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Popular <span>Dishes</span></h2>
+            <div class="menu-grid">
+                <div class="dish-card">
+                    <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Burger">
+                    <div class="card-info">
+                        <h3>Classic Burger</h3>
+                        <p>Juicy beef patty with premium cheddar and secret sauce.</p>
+                        <div class="card-meta">
+                            <span class="price">₹299</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Pizza">
+                    <div class="card-info">
+                        <h3>Margherita Pizza</h3>
+                        <p>Fresh basil, hand-picked tomatoes, and mozzarella.</p>
+                        <div class="card-meta">
+                            <span class="price">₹449</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Pasta">
+                    <div class="card-info">
+                        <h3>Creamy Pasta</h3>
+                        <p>White sauce penne pasta served with garlic bread.</p>
+                        <div class="card-meta">
+                            <span class="price">₹349</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="section">
+        <div class="container">
+            <h2 class="section-title">Special <span>Offers</span></h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-badge">BOGO</div>
+                    <h3>Buy 1 Get 1 Free</h3>
+                    <p>Applicable on all medium-sized pizzas. Every Tuesday!</p>
+                </div>
+                <div class="offer-card red-card">
+                    <div class="offer-badge">20% OFF</div>
+                    <h3>Weekend Treat</h3>
+                    <p>Get a flat 20% discount on all family platters this Sunday.</p>
+                </div>
+                <div class="offer-card">
+                    <div class="offer-badge">FREE</div>
+                    <h3>Sweet Delight</h3>
+                    <p>Free Chocolate Lava Cake on orders above ₹999.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="contact" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Table <span>Reservation</span></h2>
+            <form id="resForm" class="booking-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" placeholder="Phone Number" required>
+                    <input type="number" placeholder="No. of Guests" min="1" required>
+                </div>
+                <textarea rows="4" placeholder="Any Special Requests?"></textarea>
+                <button type="submit" class="btn btn-primary btn-block">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo logo">Spice<span>Heaven</span></div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2026 Spice Heaven Restaurant | Designed for Excellence</p>
+        </div>
+    </footer>
+
+    <button id="scrollTop"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
